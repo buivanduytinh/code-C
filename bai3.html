@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js"></script>
+    <title>kiểm tra tuổi</title>
+</head>
+<body>
+
+<script>
+
+let ngaySinh = prompt("Nhập ngày tháng năm sinh (dd/mm/yyyy): ");
+
+let ngay = ngaySinh.split("/")[0]; 
+let thang = ngaySinh.split("/")[1];
+let nam = ngaySinh.split("/")[2];
+
+let namHienTai = new Date().getFullYear();
+let tuoi = namHienTai - nam;
+
+// kiem tra
+if (tuoi >= 18) {
+  alert("Đi xem phim nhà bà Nữ");
+} else {
+  alert("Ở nhà coi Doreamon");
+}
+</script>
+
+</body>
+</html>
